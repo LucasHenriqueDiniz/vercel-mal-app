@@ -1,9 +1,7 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import { type } from "os";
-import { PureComponent } from "react";
-import { renderToStaticMarkup } from "react-dom/server";
-import { ResponsiveContainer, LineChart, ResponsiveContainerProps } from "recharts";
-import { CartesianGrid, XAxis, YAxis, Tooltip, Legend, Bar, BarChart, Line } from "recharts";
+"use server";
+import { NextRequest, NextResponse } from "next/server";
+import * as d3 from "d3";
+import testSvg from "@/app/dump/testSvg";
 
 const data = {
   mean_score: 6.42,
@@ -120,37 +118,65 @@ const data = {
   result: true,
 };
 
-// Preparar os dados para o Recharts
 const chartData = data.items.map((item) => ({
   name: item.item_label,
   count: item.item_count,
 }));
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  // Renderizar o gráfico Recharts para uma string SVG
+export async function GET(req: NextRequest, res: NextResponse) {
+  const ReactDOMServer = (await import("react-dom/server")).default;
+  const svgString2 = ReactDOMServer.renderToString(testSvg());
+  const jsdom = (await import("jsdom")).default;
+  const { JSDOM } = jsdom;
 
-  const svgString = renderToStaticMarkup(
-    <BarChart
-      width={600}
-      height={300}
-      data={chartData}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Bar
-        dataKey="count"
-        fill="#8884d8"
-      />
-    </BarChart>
-  );
+  const document = new JSDOM().window.document;
 
-  // Definir o cabeçalho da resposta como SVG
-  res.setHeader("Content-Type", "image/svg+xml");
+  const margin = { top: 20, right: 30, bottom: 30, left: 40 };
+  const width = 600 - margin.left - margin.right;
+  const height = 300 - margin.top - margin.bottom;
 
-  // Enviar o SVG como resposta
-  res.status(200).send(svgString);
+  const svg = d3
+    .select(document.body)
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+  const x = d3
+    .scaleBand()
+    .domain(chartData.map((d) => d.name))
+    .range([0, width])
+    .padding(0.1);
+
+  const y = d3
+    .scaleLinear()
+    .domain([0, d3.max(chartData, (d) => d.count)!])
+    .range([height, 0]);
+
+  svg
+    .append("g")
+    .attr("transform", `translate(0,${height})`)
+    .call(d3.axisBottom(x));
+
+  svg.append("g").call(d3.axisLeft(y));
+
+  svg
+    .selectAll(".bar")
+    .data(chartData)
+    .enter()
+    .append("rect")
+    .attr("class", "bar")
+    .attr("x", (d) => x(d.name)!)
+    .attr("width", x.bandwidth())
+    .attr("y", (d) => y(d.count))
+    .attr("height", (d) => height - y(d.count))
+    .attr("fill", "#8884d8");
+
+  const svgString = document.body.innerHTML;
+
+  return new NextResponse(svgString, {
+    status: 200,
+    headers: { "Content-Type": "image/svg+xml" },
+  });
 }
-// Create a chart and responde a SVG img like badge.io and such
