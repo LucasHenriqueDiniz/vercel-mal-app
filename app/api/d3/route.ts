@@ -1,7 +1,6 @@
 "use server";
-import { NextRequest, NextResponse } from "next/server";
 import * as d3 from "d3";
-import testSvg from "@/app/dump/testSvg";
+import { NextRequest, NextResponse } from "next/server";
 
 const data = {
   mean_score: 6.42,
@@ -124,8 +123,7 @@ const chartData = data.items.map((item) => ({
 }));
 
 export async function GET(req: NextRequest, res: NextResponse) {
-  const ReactDOMServer = (await import("react-dom/server")).default;
-  const svgString2 = ReactDOMServer.renderToString(testSvg());
+  // const ReactDOMServer = (await import("react-dom/server")).default;
   const jsdom = (await import("jsdom")).default;
   const { JSDOM } = jsdom;
 
@@ -140,6 +138,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
+    .attr("xmlns", "http://www.w3.org/2000/svg")
     .append("g")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -173,9 +172,9 @@ export async function GET(req: NextRequest, res: NextResponse) {
     .attr("height", (d) => height - y(d.count))
     .attr("fill", "#8884d8");
 
-  const svgString = document.body.innerHTML;
+  const s = d3.select(document.body).html().toString();
 
-  return new NextResponse(svgString, {
+  return new NextResponse(s, {
     status: 200,
     headers: { "Content-Type": "image/svg+xml" },
   });
