@@ -80,7 +80,8 @@ export async function GET(request: NextRequest) {
     .select(document.body)
     .append("svg")
     .attr("viewBox", [0, 0, width, height])
-    .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif;");
+    .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif;")
+    .style("color", "white");
   setSvgBasicAttributes(svg, width, height);
 
   // Barras com cores variadas e bordas
@@ -142,9 +143,10 @@ export async function GET(request: NextRequest) {
     .attr("x", width / 2)
     .attr("y", 20)
     .attr("text-anchor", "middle")
-    .style("font-size", titleFontSize)
-    .text(title);
-
+    .style("font-size", titleFontSize);
+  {
+    title && svg.text(title);
+  }
   const s = d3.select(document.body).html().toString();
 
   return new NextResponse(s, {

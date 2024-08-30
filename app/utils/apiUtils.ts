@@ -26,7 +26,7 @@ export function getRequestParams(
   const width = searchParams.get("width") || defaultWidth || "600";
   const height = searchParams.get("height") || defaultHeight || "300";
 
-  const title = searchParams.get("title") || "Chart Title";
+  const title = searchParams.get("title") || null;
   const xLabel = searchParams.get("xLabel") || "X Axis Label";
   const yLabel = searchParams.get("yLabel") || "Y Axis Label";
   const titleFontSize = searchParams.get("titleFontSize") || "16";
