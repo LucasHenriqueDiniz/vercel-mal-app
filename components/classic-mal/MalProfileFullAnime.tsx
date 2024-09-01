@@ -67,7 +67,7 @@ interface MalProfileStatsProps {
   statisticsData: MalStatisticsResponse;
 }
 
-const MalProfileClassic = async ({
+const MalProfileClassic = ({
   stats,
   lastActivityData,
   statisticsData,
