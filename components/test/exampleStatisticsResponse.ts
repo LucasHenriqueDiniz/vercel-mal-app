@@ -1,0 +1,27 @@
+export const exampleStatisticsResponse = {
+  anime: {
+    days_watched: 59.6,
+    mean_score: 6.44,
+    watching: 8,
+    completed: 254,
+    on_hold: 8,
+    dropped: 34,
+    plan_to_watch: 56,
+    total_entries: 360,
+    rewatched: 16,
+    episodes_watched: 3725,
+  },
+  manga: {
+    days_read: 54.4,
+    mean_score: 6.65,
+    reading: 24,
+    completed: 41,
+    on_hold: 7,
+    dropped: 48,
+    plan_to_read: 21,
+    total_entries: 141,
+    reread: 4,
+    chapters_read: 7477,
+    volumes_read: 419,
+  },
+};
