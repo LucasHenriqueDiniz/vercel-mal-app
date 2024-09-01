@@ -2,128 +2,96 @@ export const exampleLastUpdateResponse = {
   anime: [
     {
       entry: {
-        mal_id: 40507,
-        url: "https://myanimelist.net/anime/40507/Arifureta_Shokugyou_de_Sekai_Saikyou_2nd_Season",
+        mal_id: 45576,
+        url: "https://myanimelist.net/anime/45576/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu_Part_2",
         images: {
           jpg: {
             image_url:
-              "https://cdn.myanimelist.net/images/anime/1877/119668.jpg?s=c02604eca72330b7b2b6199baf1b412e",
+              "https://cdn.myanimelist.net/images/anime/1028/117777.jpg?s=04992a8a5af8434268781d6e264973ba",
             small_image_url:
-              "https://cdn.myanimelist.net/images/anime/1877/119668t.jpg?s=c02604eca72330b7b2b6199baf1b412e",
+              "https://cdn.myanimelist.net/images/anime/1028/117777t.jpg?s=04992a8a5af8434268781d6e264973ba",
             large_image_url:
-              "https://cdn.myanimelist.net/images/anime/1877/119668l.jpg?s=c02604eca72330b7b2b6199baf1b412e",
+              "https://cdn.myanimelist.net/images/anime/1028/117777l.jpg?s=04992a8a5af8434268781d6e264973ba",
           },
           webp: {
             image_url:
-              "https://cdn.myanimelist.net/images/anime/1877/119668.webp?s=c02604eca72330b7b2b6199baf1b412e",
+              "https://cdn.myanimelist.net/images/anime/1028/117777.webp?s=04992a8a5af8434268781d6e264973ba",
             small_image_url:
-              "https://cdn.myanimelist.net/images/anime/1877/119668t.webp?s=c02604eca72330b7b2b6199baf1b412e",
+              "https://cdn.myanimelist.net/images/anime/1028/117777t.webp?s=04992a8a5af8434268781d6e264973ba",
             large_image_url:
-              "https://cdn.myanimelist.net/images/anime/1877/119668l.webp?s=c02604eca72330b7b2b6199baf1b412e",
+              "https://cdn.myanimelist.net/images/anime/1028/117777l.webp?s=04992a8a5af8434268781d6e264973ba",
           },
         },
-        title: "Arifureta Shokugyou de Sekai Saikyou 2nd Season",
+        title: "Mushoku Tensei: Isekai Ittara Honki Dasu Part 2",
       },
-      score: 7,
+      score: 10,
       status: "Completed",
       episodes_seen: 12,
       episodes_total: 12,
-      date: "2024-08-30T16:46:00+00:00",
+      date: "2024-08-12T23:31:00+00:00",
     },
     {
       entry: {
-        mal_id: 57892,
-        url: "https://myanimelist.net/anime/57892/Hazurewaku_no_Joutai_Ijou_Skill_de_Saikyou_ni_Natta_Ore_ga_Subete_wo_Juurin_suru_made",
+        mal_id: 39535,
+        url: "https://myanimelist.net/anime/39535/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu",
         images: {
           jpg: {
             image_url:
-              "https://cdn.myanimelist.net/images/anime/1914/143630.jpg?s=9ca36acb977108eae6b7cb2697fc7da7",
+              "https://cdn.myanimelist.net/images/anime/1530/117776.jpg?s=87edb6028d905083c1617292e332c0a2",
             small_image_url:
-              "https://cdn.myanimelist.net/images/anime/1914/143630t.jpg?s=9ca36acb977108eae6b7cb2697fc7da7",
+              "https://cdn.myanimelist.net/images/anime/1530/117776t.jpg?s=87edb6028d905083c1617292e332c0a2",
             large_image_url:
-              "https://cdn.myanimelist.net/images/anime/1914/143630l.jpg?s=9ca36acb977108eae6b7cb2697fc7da7",
+              "https://cdn.myanimelist.net/images/anime/1530/117776l.jpg?s=87edb6028d905083c1617292e332c0a2",
           },
           webp: {
             image_url:
-              "https://cdn.myanimelist.net/images/anime/1914/143630.webp?s=9ca36acb977108eae6b7cb2697fc7da7",
+              "https://cdn.myanimelist.net/images/anime/1530/117776.webp?s=87edb6028d905083c1617292e332c0a2",
             small_image_url:
-              "https://cdn.myanimelist.net/images/anime/1914/143630t.webp?s=9ca36acb977108eae6b7cb2697fc7da7",
+              "https://cdn.myanimelist.net/images/anime/1530/117776t.webp?s=87edb6028d905083c1617292e332c0a2",
             large_image_url:
-              "https://cdn.myanimelist.net/images/anime/1914/143630l.webp?s=9ca36acb977108eae6b7cb2697fc7da7",
+              "https://cdn.myanimelist.net/images/anime/1530/117776l.webp?s=87edb6028d905083c1617292e332c0a2",
           },
         },
-        title:
-          'Hazurewaku no "Joutai Ijou Skill" de Saikyou ni Natta Ore ga Subete wo Juurin suru made',
+        title: "Mushoku Tensei: Isekai Ittara Honki Dasu",
       },
-      score: 5,
-      status: "Watching",
-      episodes_seen: 7,
-      episodes_total: 12,
-      date: "2024-08-26T16:12:00+00:00",
-    },
-    {
-      entry: {
-        mal_id: 36882,
-        url: "https://myanimelist.net/anime/36882/Arifureta_Shokugyou_de_Sekai_Saikyou",
-        images: {
-          jpg: {
-            image_url:
-              "https://cdn.myanimelist.net/images/anime/1776/97682.jpg?s=45ecb0471ce53e7fb02914f32a95fce4",
-            small_image_url:
-              "https://cdn.myanimelist.net/images/anime/1776/97682t.jpg?s=45ecb0471ce53e7fb02914f32a95fce4",
-            large_image_url:
-              "https://cdn.myanimelist.net/images/anime/1776/97682l.jpg?s=45ecb0471ce53e7fb02914f32a95fce4",
-          },
-          webp: {
-            image_url:
-              "https://cdn.myanimelist.net/images/anime/1776/97682.webp?s=45ecb0471ce53e7fb02914f32a95fce4",
-            small_image_url:
-              "https://cdn.myanimelist.net/images/anime/1776/97682t.webp?s=45ecb0471ce53e7fb02914f32a95fce4",
-            large_image_url:
-              "https://cdn.myanimelist.net/images/anime/1776/97682l.webp?s=45ecb0471ce53e7fb02914f32a95fce4",
-          },
-        },
-        title: "Arifureta Shokugyou de Sekai Saikyou",
-      },
-      score: 5,
+      score: 10,
       status: "Completed",
-      episodes_seen: 13,
-      episodes_total: 13,
-      date: "2024-08-26T16:11:00+00:00",
+      episodes_seen: 11,
+      episodes_total: 11,
+      date: "2024-08-12T23:31:00+00:00",
+    },
+    {
+      entry: {
+        mal_id: 52211,
+        url: "https://myanimelist.net/anime/52211/Mashle",
+        images: {
+          jpg: {
+            image_url:
+              "https://cdn.myanimelist.net/images/anime/1218/135107.jpg?s=b780fc784330db8d7d8c66a680ed676c",
+            small_image_url:
+              "https://cdn.myanimelist.net/images/anime/1218/135107t.jpg?s=b780fc784330db8d7d8c66a680ed676c",
+            large_image_url:
+              "https://cdn.myanimelist.net/images/anime/1218/135107l.jpg?s=b780fc784330db8d7d8c66a680ed676c",
+          },
+          webp: {
+            image_url:
+              "https://cdn.myanimelist.net/images/anime/1218/135107.webp?s=b780fc784330db8d7d8c66a680ed676c",
+            small_image_url:
+              "https://cdn.myanimelist.net/images/anime/1218/135107t.webp?s=b780fc784330db8d7d8c66a680ed676c",
+            large_image_url:
+              "https://cdn.myanimelist.net/images/anime/1218/135107l.webp?s=b780fc784330db8d7d8c66a680ed676c",
+          },
+        },
+        title: "Mashle",
+      },
+      score: 6,
+      status: "Completed",
+      episodes_seen: 12,
+      episodes_total: 12,
+      date: "2024-06-10T21:40:00+00:00",
     },
   ],
   manga: [
-    {
-      entry: {
-        mal_id: 122650,
-        url: "https://myanimelist.net/manga/122650/Hazurewaku_no_Joutai_Ijou_Skill_de_Saikyou_ni_Natta_Ore_ga_Subete_wo_Juurin_suru_made",
-        images: {
-          jpg: {
-            image_url:
-              "https://cdn.myanimelist.net/images/manga/3/226075.jpg?s=8738043218f07c126136aaa67e7242cf",
-            small_image_url:
-              "https://cdn.myanimelist.net/images/manga/3/226075t.jpg?s=8738043218f07c126136aaa67e7242cf",
-            large_image_url:
-              "https://cdn.myanimelist.net/images/manga/3/226075l.jpg?s=8738043218f07c126136aaa67e7242cf",
-          },
-          webp: {
-            image_url:
-              "https://cdn.myanimelist.net/images/manga/3/226075.webp?s=8738043218f07c126136aaa67e7242cf",
-            small_image_url:
-              "https://cdn.myanimelist.net/images/manga/3/226075t.webp?s=8738043218f07c126136aaa67e7242cf",
-            large_image_url:
-              "https://cdn.myanimelist.net/images/manga/3/226075l.webp?s=8738043218f07c126136aaa67e7242cf",
-          },
-        },
-        title:
-          'Hazurewaku no "Joutai Ijou Skill" de Saikyou ni Natta Ore ga Subete wo Juurin suru made',
-      },
-      score: 7,
-      status: "Reading",
-      chapters_read: null,
-      chapters_total: null,
-      date: "2024-08-26T16:11:00+00:00",
-    },
     {
       entry: {
         mal_id: 70261,
@@ -152,7 +120,7 @@ export const exampleLastUpdateResponse = {
       status: "Reading",
       chapters_read: 80,
       chapters_total: 330,
-      date: "2024-08-23T11:16:00+00:00",
+      date: "2024-08-24T11:16:00+00:00",
     },
     {
       entry: {
@@ -183,6 +151,36 @@ export const exampleLastUpdateResponse = {
       chapters_read: 125,
       chapters_total: 125,
       date: "2024-06-26T01:32:00+00:00",
+    },
+    {
+      entry: {
+        mal_id: 121496,
+        url: "https://myanimelist.net/manga/121496/Solo_Leveling",
+        images: {
+          jpg: {
+            image_url:
+              "https://cdn.myanimelist.net/images/manga/3/222295.jpg?s=d7df4f643bd9113db1c1d06d7c8fae12",
+            small_image_url:
+              "https://cdn.myanimelist.net/images/manga/3/222295t.jpg?s=d7df4f643bd9113db1c1d06d7c8fae12",
+            large_image_url:
+              "https://cdn.myanimelist.net/images/manga/3/222295l.jpg?s=d7df4f643bd9113db1c1d06d7c8fae12",
+          },
+          webp: {
+            image_url:
+              "https://cdn.myanimelist.net/images/manga/3/222295.webp?s=d7df4f643bd9113db1c1d06d7c8fae12",
+            small_image_url:
+              "https://cdn.myanimelist.net/images/manga/3/222295t.webp?s=d7df4f643bd9113db1c1d06d7c8fae12",
+            large_image_url:
+              "https://cdn.myanimelist.net/images/manga/3/222295l.webp?s=d7df4f643bd9113db1c1d06d7c8fae12",
+          },
+        },
+        title: "Solo Leveling",
+      },
+      score: 6,
+      status: "Completed",
+      chapters_read: 201,
+      chapters_total: 201,
+      date: "2024-05-08T17:23:00+00:00",
     },
   ],
 };
